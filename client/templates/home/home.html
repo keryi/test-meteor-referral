@@ -1,0 +1,8 @@
+<template name='home'>
+  <h1 class="text-center">Meteor X Referral System</h1>
+  {{#unless currentUser}}
+  {{> atForm}}
+  {{else}}
+  <h2>Referral Url: {{referralUrl}}</h2>
+  {{/unless}}
+</template>

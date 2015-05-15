@@ -3,6 +3,11 @@
   {{#unless currentUser}}
   {{> atForm}}
   {{else}}
-  <h2>Referral Url: {{referralUrl}}</h2>
+  <h2>Share Your Link</h2>
+  <p>
+    Copy your personal referral link and share it with your friends and followers.
+  </p>
+  <h4>Referral Link</h4>
+  <input class="form-control" onclick="this.select();" readonly="" type="text" value="{{referralUrl}}">
   {{/unless}}
 </template>

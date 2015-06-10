@@ -3,6 +3,6 @@ Router.configure
 
 Router.map ->
   @route 'home',
-    path: '/',
+    path: '/'
     waitOn: ->
       return Meteor.subscribe 'myReferralId', Meteor.userId()
